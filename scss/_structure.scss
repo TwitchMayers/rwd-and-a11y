@@ -1,0 +1,43 @@
+%template {
+    margin: 0;
+    padding: 0;
+}
+
+header,
+main,
+section,
+footer,
+nav,
+ul,
+legend,
+button,
+fieldset {
+    @extend %template
+}
+
+header {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.nav {
+    display: flex;
+    justify-content: center;
+}
+
+ul {
+    & li {
+        list-style-type: none;
+    }
+}
+
+button {
+    cursor: pointer;
+}
+
+body {
+    text-align: center;
+}

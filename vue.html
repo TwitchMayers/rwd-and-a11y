@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Vue Page</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+    <link rel="stylesheet" href="/scss/style.css">
+</head>
+
+<body>
+    <nav class="notes-nav">
+        <a href="../index.html">На главную</a>
+    </nav>
+
+    <div id="app">
+        <form @submit.prevent="addNote" class="notes-form">
+            <p>Текст записи</p>
+            <textarea class="notes-form__textarea" v-model="newNote" :style="{ color: charsColor }"
+                placeholder="Напишите здесь"></textarea>
+            <button class="notes-form__btn" :disabled="isDisabled" type="submit">Добавить</button>
+            <span class="notes-form__counter" v-show="newNote.length > 0" :style="{ color: charsColor }">{{
+                charsRemaining }}</span>
+        </form>
+
+        <section class="notes">
+            <h2>{{ notesTitle }}</h2>
+            <div v-for="(note, index) in notes" :key="index" class="note">
+                {{ note.text }} <br> {{ new Intl.DateTimeFormat('ru', {year: "numeric", month: "numeric", day:
+                "numeric", hour: "numeric", minute: "numeric"}).format(note.time) }}
+            </div>
+        </section>
+    </div>
+
+
+    <script src="/js/vue.js"></script>
+</body>
+
+</html>

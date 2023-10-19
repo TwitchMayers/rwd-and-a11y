@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/scss/style.css">
+    <title>Lab7</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="header-wrapper">
+            <nav class="nav">
+                <ul class="nav__container-icons">
+                    <li class="nav__icon nav__icon--menu">
+                        <button class="nav__button-menu" aria-expanded="false" aria-controls="nav__container-items">
+                            <img src="/img/burger.svg" alt="burger" class="menu burger">
+                        </button>
+                    </li>
+                    <li class="nav__icon nav__icon--search">
+                        <a href="#">
+                            <svg viewBox="0 0 40 40" height="40px" width="40px" fill="black" class="menu search">
+                                <rect x="0.964844" y="34.0015" width="36" height="5" />
+                                <rect x="33.6289" y="21.3679" width="24.8629" height="4.7561"
+                                    transform="rotate(-135 33.6289 21.3679)" />
+                                <rect x="0.953125" y="18.0718" width="25.5574" height="4.7561"
+                                    transform="rotate(-45 0.953125 18.0718)" />
+                                <rect x="0.964844" y="39.0012" width="21" height="5"
+                                    transform="rotate(-90 0.964844 39.0012)" />
+                                <rect x="31.9648" y="39.0012" width="21" height="5"
+                                    transform="rotate(-90 31.9648 39.0012)" />
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="nav__icon nav__icon--home">
+                        <a href="#">
+                            <svg viewBox="0 0 40 40" height="40px" width="40px" fill="black" class="menu home">
+                                <rect x="35.9531" y="39.4868" width="18.3158" height="5"
+                                    transform="rotate(-135 35.9531 39.4868)" />
+                                <path
+                                    d="M30 15C30 23.2843 23.2843 30 15 30C6.71573 30 0 23.2843 0 15C0 6.71573 6.71573 0 15 0C23.2843 0 30 6.71573 30 15ZM4.92252 15C4.92252 20.5656 9.43436 25.0775 15 25.0775C20.5656 25.0775 25.0775 20.5656 25.0775 15C25.0775 9.43436 20.5656 4.92252 15 4.92252C9.43436 4.92252 4.92252 9.43436 4.92252 15Z" />
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+                <ul class="nav__container-items" id="nav__container-items">
+                    <li class="nav__item"><a class="nav__item-link" href="#">About</a></li>
+                    <li class="nav__item"><a class="nav__item-link" href="#">Product</a></li>
+                    <li class="nav__item"><a class="nav__item-link" href="#">Pricing</a></li>
+                    <li class="nav__item"><a class="nav__item-link" href="/animation.html">Anime</a></li>
+                    <li class="nav__item"><a class="nav__item-link" href="/vue.html">Vue</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="alert">
+        <button class="alert__close"><img src="img/close.svg" width="15" height="15" alt="close message"></button>
+        <p class="alert__content"></p>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
